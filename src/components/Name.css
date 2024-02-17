@@ -1,0 +1,34 @@
+@keyframes typing {
+    from { width: 0 }
+    to { width: 25% }
+  }
+  
+  .typing {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    font-size: 24px;
+    border-right: .15em solid rgb(31, 91, 114); /* The typewriter cursor */
+    animation: typing 5s steps(8) infinite;
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
+
+  @media only screen and (max-width: 767px) {
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    .typing {
+      display: inline-block;
+      white-space: nowrap;
+      font-size: 10px;
+      animation: typing 5s steps(8) infinite;
+    }
+  }
+  
